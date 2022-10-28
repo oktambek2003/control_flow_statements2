@@ -9,7 +9,7 @@ Returns:
 */
 int func(int a, int b, int c) {
   int d;
-  if (a == b && b==c) {
+  if (a == b ){
     d = 0;
     return d;
   }
