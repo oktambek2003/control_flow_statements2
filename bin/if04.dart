@@ -7,22 +7,20 @@ Args:
 Returns:
     int: return answer. 
 */
-int func(int a, int b, int c) {
+int func(int a, int b) {
   int d;
-  if (a == b ){
+  if (a == b) {
     d = 0;
     return d;
   }
-  if (a > b && a > c) {
+  if (a > b) {
     d = a;
-  } else if (b > a && b > c) {
-    d = b;
   } else {
-    d = c;
+    d = b;
   }
   return d;
 }
 
 void main() {
-  print(func(15, 15, 23));
+  print(func(15, 15));
 }
