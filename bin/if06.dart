@@ -14,27 +14,27 @@ int func(int a) {
   int f = (a % 10000) ~/ 1000;
   int e = a ~/ 10000;
 
-  if (b < c && b < d && b < f && b < e) {
-    g = 4;
+  if (b > c && b > d && b > f && b > e) {
+    g = 1;
     return g;
   }
-  if (c < b && c < d && c < f && c < e) {
-    g = c;
-    return 3;
-  }
-  if (d < c && d < b && d < f && d < e) {
-    g = d;
-    return 2;
-  }
-  if (f < c && f < d && f < b && f < e) {
+  if (c > b && c > d && c > f && c > e) {
     g = 2;
     return g;
+  }
+  if (d > c && d > b && d > f && d > e) {
+    g = 3;
+    return g;
+  }
+  if (f > c && f > d && f > b && f > e) {
+    g = 4;
+    return g;
   } else {
-    g = 0;
+    g = 5;
   }
   return g;
 }
 
 void main() {
-  print(func(11975));
+  print(func(54694));
 }
