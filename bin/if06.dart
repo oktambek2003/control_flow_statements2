@@ -15,22 +15,22 @@ int func(int a) {
   int e = a ~/ 10000;
 
   if (b < c && b < d && b < f && b < e) {
-    g = b;
+    g = 4;
     return g;
   }
   if (c < b && c < d && c < f && c < e) {
     g = c;
-    return g;
+    return 3;
   }
   if (d < c && d < b && d < f && d < e) {
     g = d;
-    return g;
+    return 2;
   }
   if (f < c && f < d && f < b && f < e) {
-    g = f;
+    g = 2;
     return g;
   } else {
-    g = e;
+    g = 0;
   }
   return g;
 }
@@ -38,4 +38,3 @@ int func(int a) {
 void main() {
   print(func(11975));
 }
-
